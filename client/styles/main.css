@@ -1,0 +1,47 @@
+html {
+    font-size: 1.25em;
+}
+a {
+    color: #1fff5a;
+}
+a:hover {
+    color: #A8C1A8;
+}
+
+.logo img {
+    width: 75px;
+    position: relative;
+    bottom: 30px;
+    -webkit-transition: width 2s;
+    /* Safari */
+    transition: width 2s;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+.logo img:hover {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+.transbg .logo img {
+    width: 50px;
+    bottom: 0 !important;
+}
+
+.title-label {
+    margin: 0 0 25px 0;
+}
+
+.inv-team-picture {
+    height: 180px;
+}
+
+#WhoMadeOurApp {
+    margin-top: 40px;
+}
