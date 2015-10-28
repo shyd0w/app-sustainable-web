@@ -1,1 +1,1 @@
-web: slc run --cluster n
+web: node .
