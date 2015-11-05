@@ -1,5 +1,9 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var http = require("http");
+var fs = require("fs");
+var path = require("path");
+var mime = require("mime");
 
 var app = module.exports = loopback();
 
