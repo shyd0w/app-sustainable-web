@@ -218,8 +218,7 @@ angular
             /*
              * Get Site Info
              */
-            sw.sitData = SiteDataService.getSiteData();
-            console.log(sw);
+            //sw.sitData = SiteDataService.getSiteData();
             /*
             sw.facebook = {};
             sw.facebook.url = function () {
