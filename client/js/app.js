@@ -192,6 +192,9 @@ angular
             };
 
             /*
+             * Get Site Info
+             */
+            /*
              * Get App Run Info
              */
             sw.server = {
@@ -215,31 +218,31 @@ angular
                 }
             };
 
-            /*
-             * Get Site Info
-             */
             //sw.sitData = SiteDataService.getSiteData();
-            /*
+
             sw.facebook = {};
             sw.facebook.url = function () {
-                return SiteService.getFacebookInformation("facebook", "url");
+                return "https://www.facebook.com/NGSW-1436565236598473/?fref=ts";
+                //return SiteService.getFacebookInformation("facebook", "url");
             };
 
             sw.twitter = {};
             sw.twitter.url = function () {
-                return SiteService.getTwitterInformation("twitter", "url");
+                return "https://twitter.com/NGSWB";
+                //return SiteService.getTwitterInformation("twitter", "url");
             };
 
             sw.instagram = {};
             sw.instagram.url = function () {
-                return SiteService.getInstagramInformation("instagram", "url");
+                return "https://www.instagram.com/sustainableworld.biz/";
+                //return SiteService.getInstagramInformation("instagram", "url");
             };
 
             sw.instagram = {};
             sw.linkedin.url = function () {
-                return SiteService.getLinkedinInformation("linkedin", "url");
+                return "https://www.linkedin.com/in/ioanna-mantzouridou-onasi-4b489093";
+                //return SiteService.getLinkedinInformation("linkedin", "url");
             };
-            */
 
             /*
              * Get Statistics
