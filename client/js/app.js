@@ -238,7 +238,7 @@ angular
                 //return SiteService.getInstagramInformation("instagram", "url");
             };
 
-            sw.instagram = {};
+            sw.linkedin = {};
             sw.linkedin.url = function () {
                 return "https://www.linkedin.com/in/ioanna-mantzouridou-onasi-4b489093";
                 //return SiteService.getLinkedinInformation("linkedin", "url");
