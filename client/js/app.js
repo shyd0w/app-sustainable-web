@@ -300,7 +300,6 @@ angular
                 //Total Social Media Followers
                 $('#counter2').text('0');
                 setInterval(function () {
-
                     var curval = parseInt($('#counter').text());
                     var curval1 = parseInt($('#counter1').text().replace(' ', ''));
                     var curval2 = parseInt($('#counter2').text());
