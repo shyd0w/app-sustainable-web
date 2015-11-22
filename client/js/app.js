@@ -194,6 +194,7 @@ angular
             /*
              * Get Site Info
              */
+            //sw.sitData = SiteDataService.getSiteData();
             /*
              * Get App Run Info
              */
@@ -217,9 +218,7 @@ angular
                     percentage: 25
                 }
             };
-
-            //sw.sitData = SiteDataService.getSiteData();
-
+        
             sw.facebook = {};
             sw.facebook.url = function () {
                 return "https://www.facebook.com/NGSW-1436565236598473/?fref=ts";
