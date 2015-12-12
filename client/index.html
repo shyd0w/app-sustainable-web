@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" data-ng-app="app">
 
 <head>
     <title>Sustainable World</title>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
     <link rel="stylesheet" type="text/css" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
@@ -38,13 +38,11 @@
         });
     </script>
     <!--END Vendor Style and Bootstrapping -->
-
     <!-- App Style and Bootstrapping -->
     <link rel="stylesheet" type="text/css" href="styles/main.css" media="all">
-
 </head>
 
-<body ng-controller="AppController">
+<body data-ng-controller="AppController">
     <div id="home">
         <div class="headerLine">
             <div id="menuF" class="default">
@@ -53,7 +51,7 @@
                         <div class="logo col-md-4">
                             <div>
                                 <a href="#">
-                                    <img src="ngsb-content/web.png">
+                                    <img src="ngsb-content/web.png" alt="NGSB Logo">
                                 </a>
                             </div>
                         </div>
@@ -66,8 +64,8 @@
                                     <li><a href="#WhyOurApp">Why Our App</a></li>
                                     <li><a href="#WhoMadeOurApp">Who Made It</a></li>
                                     <!--
-                                    <li ng-if="false"><a href="#project">Media</a></li>
-                                    <li ng-if="false"><a href="#news">News</a></li>
+                                    <li data-ng-if="false"><a href="#project">Media</a></li>
+                                    <li data-ng-if="false"><a href="#news">News</a></li>
                                     -->
                                     <li class="last"><a href="#contact">Contact</a></li>
                                     <!--li><a href="#features">Features</a></li-->
@@ -79,21 +77,20 @@
             </div>
             <!-- 
             <ul class="navbar">
-                <li class="navbar-link" ng-if="!sw.user">
-                    <a ui-sref="login">
+                <li class="navbar-link" data-ng-if="!sw.user">
+                    <a data-ui-sref="login">
                         Login
                     </a>
                 </li>
                 <li class="navbar-link" ng-if="sw.user">
-                    <a ui-sref="logout">
+                    <a data-ui-sref="logout">
                         Logout
                     </a>
                 </li>
             </ul>
             -->
-            
             <!-- UI VIEW -->
-            <div ui-view>
+            <div data-ui-view>
                 <!-- CONTENTS -->
             </div>
             <!-- END UI VIEW -->
@@ -137,21 +134,20 @@
                 <div class="col-md-4 project">
                     <h3 id="counter2" style="margin-left: 20px;">0</h3>
                     <h4 style="margin-left: 20px;">Our Number of Social Media Followers</h4>
-                    <p>Have you checked out any of our social media? Have a look below!</a>
-                    </p>
+                    <p>Have you checked out any of our social media? Have a look below!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="soc col-md-12">
                     <ul>
                         <li class="soc1">
-                            <a ng-href="wwww.linkedin.com/ngsb"></a>
+                            <a data-ng-href="wwww.linkedin.com/ngsb"></a>
                         </li>
                         <li class="soc2">
-                            <a ng-href="www.facebook.com/NGSW"></a>
+                            <a data-ng-href="www.facebook.com/NGSW"></a>
                         </li>
                         <li class="soc3">
-                            <a ng-href="www.twitter.com/NGSWB"></a>
+                            <a data-ng-href="www.twitter.com/NGSWB"></a>
                         </li>
                     </ul>
                 </div>
@@ -202,7 +198,7 @@
         <div class="container">
             <div class="row team">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle inv-team-picture" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/0b3/057/0ac7ab1.jpg">
+                    <img class="img-responsive img-circle inv-team-picture" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/0b3/057/0ac7ab1.jpg" alt="Sonia">
                     <h4>Sonia Mantzouridou-Onasi</h4>
                     <h5>CMO</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -213,7 +209,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 b1">
-                    <img class="img-responsive img-circle inv-team-picture" src="ngsb-content/team/ioanna.jpg">
+                    <img class="img-responsive img-circle inv-team-picture" src="ngsb-content/team/ioanna.jpg" alt="Ioanna">
                     <h4>Ioanna Mantzouridou-Onasi</h4>
                     <h5>CEO</h5>
                     <p>
@@ -225,7 +221,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 b3">
-                    <img class="img-responsive img-circle inv-team-picture" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANkAAAAJDE3MGI3NzAzLTEzMjAtNDY1My05ODBhLTFiOWNjZDI4MzZjMg.jpg">
+                    <img class="img-responsive img-circle inv-team-picture" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANkAAAAJDE3MGI3NzAzLTEzMjAtNDY1My05ODBhLTFiOWNjZDI4MzZjMg.jpg" alt="Sean">
                     <h4>Sean Vazquez</h4>
                     <h5>CTO</h5>
                     <p>Since he could walk, Sean Vazqez has always wanted to make the world a better place. His eye has been keen on music, technology, and being green as a means to making the world a better place daily. He strives for new ideas, everyday.
@@ -302,7 +298,7 @@
         </div>
 
 
-        <div class="container" ng-if="false">
+        <div class="container" data-ng-if="false">
             <div class="row aboutUs">
                 <div class="col-md-12 ">
                     <h3>What Our Customers Say About Us?</h3>
@@ -310,20 +306,20 @@
             </div>
         </div>
 
-        <div style="position: relative;" ng-if="false">
+        <div style="position: relative;" data-ng-if="false">
 
             <div class="container">
                 <div class="row about">
                     <div class="col-md-6">
                         <div class="about1">
-                            <img class="pic1Ab" src="images/picAbout/aboutP1.png">
+                            <img class="pic1Ab" src="images/picAbout/aboutP1.png" alt="">
                             <h3>Anna Smith, Company Inc.</h3>
                             <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor feugiat fermentum quisque eget pharetra, felis et venenatis. aliquam, nulla nisi lobortis elit ac.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="about2">
-                            <img class="pic2Ab" src="images/picAbout/aboutP2.png">
+                            <img class="pic2Ab" src="images/picAbout/aboutP2.png" alt="">
                             <h3>John Doe, Company Inc.</h3>
                             <p>Consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo, adipiscing auctor, ut auctor feugiat fermentum nec quisque eget pharetra, felis et venenatis aliquam, nulla nisi lobortis elit, ac luctus.</p>
                         </div>
@@ -337,14 +333,14 @@
                 <div class="row about">
                     <div class="col-md-6">
                         <div class="about1">
-                            <img class="pic1Ab" src="images/picAbout/aboutP3.png">
+                            <img class="pic1Ab" src="images/picAbout/aboutP3.png" alt="">
                             <h3>Tom Sawyer, Company Inc.</h3>
                             <p>A auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor feugiat fermentum quisque eget pharetra, felis et venenatis aliquam, nulla nisi lobortis elit, acnterdum ante feugiat vitae.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="about2">
-                            <img class="pic2Ab" src="images/picAbout/aboutP4.png">
+                            <img class="pic2Ab" src="images/picAbout/aboutP4.png" alt="">
                             <h3>Sarah White, Company Inc.</h3>
                             <p>Ornare nibh a auctor, mauris scelerisque eu proin nec urna nec a quis justo adipiscing auctor ut auctor feugiat fermentum quisque eget pharetra felis et venenatis aliquam, nulla nisi lobortis elit, ac eleifend nisl ante nec lorem. </p>
                         </div>
@@ -355,7 +351,7 @@
         </div>
     </div>
     <!--project start-->
-    <div id="project" ng-if="false">
+    <div id="project" data-ng-if="false">
         <div class="line3">
             <div class="container">
                 <div id="project1"></div>
@@ -367,15 +363,14 @@
                 </div>
             </div>
         </div>
-
-
+        
         <div class="container">
 
             <div class="row">
                 <!-- filter_block -->
                 <div id="options" class="col-md-12" style="text-align: center;">
                     <ul id="filter" class="option-set" data-option-key="filter">
-                        <li><a class="selected" href="#filter" data-option-value="*" class="current">All Works</a></li>
+                        <li><a class="selected current" href="#filter" data-option-value="*">All Works</a></li>
                         <li><a href="#filter" data-option-value=".polygraphy">Polygraphy</a></li>
                         <li><a href="#filter" data-option-value=".branding">Branding</a></li>
                         <li><a href="#filter" data-option-value=".web">Web UI</a></li>
@@ -383,8 +378,6 @@
                     </ul>
                 </div>
                 <!-- //filter_block -->
-
-
 
                 <div class="portfolio_block columns3   pretty" data-animated="fadeIn">
                     <div class="element col-sm-4   gall branding">
@@ -573,7 +566,7 @@
 
     <!--news start-->
 
-    <div id="news" ng-if="false">
+    <div id="news" data-ng-if="false">
         <div class="line4">
             <div class="container">
                 <div class="row Ama">
@@ -587,7 +580,7 @@
         <div class="container">
             <div class="row news">
                 <div class="col-md-6  text-left">
-                    <img class="img-responsive picsGall" src="images/picNews/news1.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news1.jpg" alt="" />
                     <h3><a href="#">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -598,7 +591,7 @@
                     <hr class="hrNews">
                 </div>
                 <div class="col-md-6 text-right">
-                    <img class="img-responsive picsGall" src="images/picNews/news2.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news2.jpg" alt="" />
                     <h3><a href="#">Nam in Nisl id Ipsum Feugiat Posuere ut sit Amet Sem</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -613,7 +606,7 @@
         <div class="container">
             <div class="row news2 news">
                 <div class="col-md-6 text-left">
-                    <img class="img-responsive picsGall" src="images/picNews/news3.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news3.jpg" alt="" />
                     <h3><a href="#">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -624,7 +617,7 @@
                     <hr class="hrNews">
                 </div>
                 <div class="col-md-6 text-right">
-                    <img class="img-responsive picsGall" src="images/picNews/news4.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news4.jpg" alt="" />
                     <h3><a href="#">Nam in Nisl id Ipsum Feugiat Posuere ut sit Amet Sem</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -639,7 +632,7 @@
         <div class="container">
             <div class="row news2 news">
                 <div class="col-md-6 text-left">
-                    <img class="img-responsive picsGall" src="images/picNews/news5.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news5.jpg" alt="" />
                     <h3><a href="#">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -650,7 +643,7 @@
                     <hr class="hrNews">
                 </div>
                 <div class="col-md-6 text-right">
-                    <img class="img-responsive picsGall" src="images/picNews/news6.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news6.jpg" alt="" />
                     <h3><a href="#">Nam in Nisl id Ipsum Feugiat Posuere ut sit Amet Sem</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -662,13 +655,11 @@
                 </div>
             </div>
         </div>
-
-
 
         <div class="container hideObj2" style="display:none;">
             <div class="row news2 news">
                 <div class="col-md-6 text-right">
-                    <img class="img-responsive picsGall" src="images/picNews/news6.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news6.jpg" alt="" />
                     <h3><a href="#">Nam in Nisl id Ipsum Feugiat Posuere ut sit Amet Sem</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -679,7 +670,7 @@
                     <hr class="hrNews">
                 </div>
                 <div class="col-md-6 text-left">
-                    <img class="img-responsive picsGall" src="images/picNews/news5.jpg" />
+                    <img class="img-responsive picsGall" src="images/picNews/news5.jpg" alt="" />
                     <h3><a href="#">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h3>
                     <ul>
                         <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -706,7 +697,7 @@
     <!--contact start-->
 
     <div id="contact">
-        <div class="line5" ng-if="false">
+        <div class="line5" data-ng-if="false">
             <div class="container">
                 <div class="row Ama">
                     <div class="col-md-12">
@@ -716,7 +707,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" ng-if="false">
+        <div class="container" data-ng-if="false">
             <div class="row">
                 <div class="col-md-9 col-xs-12 forma">
                     <form>
@@ -742,31 +733,31 @@
                 </div>
                 <div class="col-md-3 col-xs-12 cont">
                     <ul>
-                        <li ng-if="false"><i class="fa fa-home"></i>5512 Lorem Ipsum Vestibulum 666/13</li>
+                        <li data-ng-if="false"><i class="fa fa-home"></i>5512 Lorem Ipsum Vestibulum 666/13</li>
                         <!--No Address -->
-                        <li ng-if="false"><i class="fa fa-phone"></i>+1 800 789 50 12, +1 800 450 6935</li>
+                        <li data-ng-if="false"><i class="fa fa-phone"></i>+1 800 789 50 12, +1 800 450 6935</li>
                         <!--No Phone -->
-                        <li ng-if="false"><a href="#"><i class="fa fa-envelope"></i>mail@compname.com</a></li>
+                        <li data-ng-if="false"><a href="#"><i class="fa fa-envelope"></i>mail@compname.com</a></li>
                         <!--No Email Yet -->
-                        <li ng-if="false"><i class="fa fa-skype"></i>compname</li>
+                        <li data-ng-if="false"><i class="fa fa-skype"></i>compname</li>
                         <!--No Skype -->
-                        <li ng-if="false"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                        <li data-ng-if="false"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
                         <!--No Twitter -->
                         <li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
-                        <li ng-if="false"><a href="#"><i class="fa fa-dribbble"></i>Dribbble</a></li>
+                        <li data-ng-if="false"><a href="#"><i class="fa fa-dribbble"></i>Dribbble</a></li>
                         <!-- No Dribble -->
-                        <li ng-if="false"><a href="#"><i class="fa fa-flickr"></i>Flickr</a></li>
+                        <li data-ng-if="false"><a href="#"><i class="fa fa-flickr"></i>Flickr</a></li>
                         <!-- Flickr -->
-                        <li ng-if="false"><a href="#"><i class="fa fa-youtube-play"></i>YouTube</a></li>
+                        <li data-ng-if="false"><a href="#"><i class="fa fa-youtube-play"></i>YouTube</a></li>
                         <!-- Youtube -->
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="line6" ng-if="false">
+        <div class="line6" data-ng-if="false">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="750" frameborder="0" style="border:0"></iframe>
         </div>
-        <div class="container" ng-if="false">
+        <div class="container" data-ng-if="false">
             <div class="row ftext">
                 <div class="col-md-12">
                     <a id="features"></a>
@@ -797,13 +788,13 @@
                     <div class="soc col-md-12">
                         <ul>
                             <li class="soc1">
-                                <a ng-href="{{sw.linkedin.url}}"></a>
+                                <a data-ng-href="{{sw.linkedin.url}}"></a>
                             </li>
                             <li class="soc2">
-                                <a ng-href="{{sw.facebook.url}}"></a>
+                                <a data-ng-href="{{sw.facebook.url}}"></a>
                             </li>
                             <li class="soc3">
-                                <a ng-href="{{sw.twitter.url}}"></a>
+                                <a data-ng-href="{{sw.twitter.url}}"></a>
                             </li>
                             <!--
                             <li class="soc1">
@@ -839,15 +830,15 @@
         <div class="lineBlack">
             <div class="container">
                 <div class="row downLine">
-                    <div class="col-md-12 text-right" ng-if="false">
+                    <div class="col-md-12 text-right" data-ng-if="false">
                         <!--input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
                         <input id="searchPattern" type="search" placeholder="Search the Site" /><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
                     </div>
                     <div class="col-md-6 text-left copy">
                         <p>NGSB Project Since 2014</p>
-                        <p ng-if="false">Copyright &copy; 2014 Timber HTML Template. All Rights Reserved.</p>
+                        <p data-ng-if="false">Copyright &copy; 2014 Timber HTML Template. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6 text-right dm" ng-if="false">
+                    <div class="col-md-6 text-right dm" data-ng-if="false">
                         <ul id="downMenu">
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
@@ -861,7 +852,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
