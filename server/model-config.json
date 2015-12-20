@@ -14,54 +14,54 @@
     ]
   },
   "User": {
-    "dataSource": "susdev"
+    "dataSource": "devsus"
   },
   "AccessToken": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": false
   },
   "ACL": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": false
   },
   "Role": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": false
   },
   "SusUser": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Article": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Category": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Comment": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Post": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Company": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Event": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   },
   "Error": {
-    "dataSource": "susdev",
+    "dataSource": "devsus",
     "public": true
   }
 }
