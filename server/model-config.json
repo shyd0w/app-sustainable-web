@@ -14,54 +14,54 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "susdev"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": false
   },
   "SusUser": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Article": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Category": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Comment": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Post": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Company": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Event": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   },
   "Error": {
-    "dataSource": "db",
+    "dataSource": "susdev",
     "public": true
   }
 }
